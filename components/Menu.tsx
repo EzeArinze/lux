@@ -1,6 +1,6 @@
 "use client";
 
-import { PanelLeftOpen, PanelRightOpen } from "lucide-react";
+import { ChartNoAxesGantt, X } from "lucide-react";
 import React, { useState } from "react";
 
 function Menu() {
@@ -32,16 +32,14 @@ function Menu() {
         <div>
           <span className="flex items-center justify-between py-4 px-2">
             <div>Sidebar Content</div>
-            <PanelRightOpen
-              className="sm:hidden duration-1000"
-              onClick={handleToogle}
-            />
+
+            <X className="sm:hidden duration-1000" onClick={handleToogle} />
           </span>
         </div>
       </div>
 
       {!toggleHamburger && (
-        <PanelLeftOpen
+        <ChartNoAxesGantt
           className="sm:hidden duration-150"
           onClick={handleToogle}
         />

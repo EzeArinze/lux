@@ -6,7 +6,6 @@ function NavBar() {
   return (
     <div className="flex justify-between w-full items-center py-4">
       <Logo />
-
       <NavBarLinks />
       <Menu />
     </div>
