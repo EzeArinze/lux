@@ -8,7 +8,7 @@ function NavBarLinks() {
   const pathname = usePathname();
 
   return (
-    <ul className="hidden  sm:flex gap-2 items-center list-none duration-1000">
+    <ul className="hidden  sm:flex gap-2 items-center list-none duration-300">
       {NavData.map((data) => {
         const isActive = pathname.startsWith(data.links);
 
